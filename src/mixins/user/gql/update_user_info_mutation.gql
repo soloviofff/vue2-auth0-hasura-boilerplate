@@ -1,0 +1,21 @@
+mutation(
+  $auth0_id: String!,
+  $second_name: String,
+  $first_name: String,
+  $avatar: String,
+  $name: String
+) {
+  update_users_by_pk(
+    pk_columns: {
+      auth0_id: $auth0_id
+    },
+    _set: {
+      new_avatar: $avatar,
+      first_name: $first_name,
+      second_name: $second_name,
+      nickname: $name
+    }
+  ) {
+    auth0_id
+  }
+}

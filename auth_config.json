@@ -1,0 +1,5 @@
+{
+  "domain": "<domain>",
+  "clientId": "<client-id>",
+  "wssEndpoint": "<hasura-wss-endpoint>"
+}
